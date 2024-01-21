@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex bg-dark">
+    <div class="f rounded-4 bg-white bg-opacity-25 mx-auto my-auto p-3 text-white">
+        <h1 class=" text-center mb-4">Calculator</h1>
+        <input type="text" name="screen" id="screen"
+            class="form-control rounded-4 shadow-none border-0 form-control-lg text-bg-dark text-end" placeholder="0">
+
+        <div class="row g-2 mt-1">
+            <div class="col-3">
+                <button onclick="insert('clear')"
+                    class="btn btn-lg text-bg-dark text-danger bold fw-bold col-12 shadow-none border-0">AC</button>
+            </div>
+            <div class="col-3">
+                <button onclick="insert('percent')"
+                    class="btn btn-lg text-bg-dark text-success bold fw-bold col-12 shadow-none border-0">%</button>
+            </div>
+            <div class="col-3">
+                <button onclick="insert('plusMinus')"
+                    class="btn btn-lg text-bg-dark text-success bold fw-bold col-12 shadow-none border-0">+/-</button>
+            </div>
+            <div class="col-3">
+                <button onclick="insert('*')"
+                    class="btn btn-lg text-bg-dark text-success bold fw-bold col-12 shadow-none border-0">×</button>
+            </div>
+        </div>
+
+        <div class="row g-2 mt-1">
+            <div class="col-3">
+                <button onclick="input(1)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">1</button>
+            </div>
+            <div class="col-3">
+                <button onclick="input(2)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">2</button>
+            </div>
+            <div class="col-3">
+                <button onclick="input(3)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">3</button>
+            </div>
+            <div class="col-3">
+                <button onclick="insert('/')"
+                    class="btn btn-lg text-bg-dark text-success bold fw-bold col-12 shadow-none border-0">÷</button>
+            </div>
+        </div>
+
+        <div class="row g-2 mt-1">
+            <div class="col-3">
+                <button onclick="input(4)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">4</button>
+            </div>
+            <div class="col-3">
+                <button onclick="input(5)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">5</button>
+            </div>
+            <div class="col-3">
+                <button onclick="input(6)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">6</button>
+            </div>
+            <div class="col-3">
+                <button onclick="insert('-')"
+                    class="btn btn-lg text-bg-dark text-success bold fw-bold col-12 shadow-none border-0">-</button>
+            </div>
+        </div>
+
+        <div class="row g-2 mt-1">
+            <div class="col-3">
+                <button onclick="input(7)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">7</button>
+            </div>
+            <div class="col-3">
+                <button onclick="input(8)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">8</button>
+            </div>
+            <div class="col-3">
+                <button onclick="input(9)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">9</button>
+            </div>
+            <div class="col-3">
+                <button onclick="insert('+')"
+                    class="btn btn-lg text-bg-dark text-success bold fw-bold col-12 shadow-none border-0">+</button>
+            </div>
+        </div>
+
+        <div class="row g-2 mt-1">
+            <div class="col-3">
+                <button onclick="insert('del')"
+                    class="btn btn-lg text-bg-dark text-danger bold fw-bold col-12 shadow-none border-0">C </button>
+            </div>
+            <div class="col-3">
+                <button onclick="input(0)" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">0</button>
+            </div>
+            <div class="col-3">
+                <button onclick="input('.')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0">,</button>
+            </div>
+            <div class="col-3">
+                <button onclick="insert('action')"
+                    class="btn btn-lg text-bg-dark text-success bold fw-bold col-12 shadow-none border-0">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
